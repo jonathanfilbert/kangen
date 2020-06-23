@@ -1,16 +1,23 @@
 {
   "expo": {
-    "name": "attention",
-    "slug": "attention",
-    "platforms": [
-      "ios",
-      "android",
-      "web"
-    ],
+    "name": "Kangen",
+    "description": "A great app to remind your loved one that you deserve their attention NOW",
+    "slug": "attention-app",
+    "platforms": ["ios", "android", "web"],
+    "privacy": "public",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
     "scheme": "myapp",
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "tech.jofil.kangen",
+      "buildNumber": "1.0.0"
+    },
+    "android": {
+      "package": "tech.jofil.kangen",
+      "versionCode": 1
+    },
     "splash": {
       "image": "./assets/images/splash.png",
       "resizeMode": "contain",
@@ -19,12 +26,7 @@
     "updates": {
       "fallbackToCacheTimeout": 0
     },
-    "assetBundlePatterns": [
-      "**/*"
-    ],
-    "ios": {
-      "supportsTablet": true
-    },
+    "assetBundlePatterns": ["**/*"],
     "web": {
       "favicon": "./assets/images/favicon.png"
     }
